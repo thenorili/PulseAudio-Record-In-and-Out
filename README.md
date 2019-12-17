@@ -1,6 +1,6 @@
 ### PulseAudio-Record-Output-and-Input
 
-I have at last conquered pulseaudio. With this I can record input and output in one stream while both are in use e.g. by discord.
+I have conquered pulseaudio. With this I can record input and output in one stream while both are in use e.g. by discord.
 
 Adding this to the end of /etc/pulse/default.pa FINALLY permitted me to AT LAST record mic input and computer output.
 
