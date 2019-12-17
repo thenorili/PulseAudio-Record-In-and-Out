@@ -1,6 +1,6 @@
 ### PulseAudio-Record-Output-and-Input
 
-I have done it at last. "pacmd list-sources" shows that my stereo monitor's index=0 and my microphone's index=1. 
+I have at last conquered pulseaudio. With this I can record input and output in one stream while both are in use e.g. by discord.
 
 Adding this to the end of /etc/pulse/default.pa FINALLY permitted me to AT LAST record mic input and computer output.
 
@@ -8,7 +8,7 @@ I highly reccomend using the program audio-recorder for this. It's the most capa
 
 ## Add this to the end of /etc/pulse/default.pa or ~/.pulse/default.pa
 
-## Ensure that the value of source=0 is your stereo monitor index & source=1 your mic input
+## Ensure that the value of source=0 is your stereo monitor index & source=1 your mic input via "pacmd list-sources"
 
   ## This sink mirrors monitored speaker output
 
