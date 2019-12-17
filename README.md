@@ -8,7 +8,7 @@ I highly reccomend using the program audio-recorder for this. It's the most capa
 
 ## Add this to the end of /etc/pulse/default.pa or ~/.pulse/default.pa
 
-## Ensure that the value of source=0 is your stereo monitor index & source=1 your mic input via "pacmd list-sources"
+## Ensure that the value of source=0 is your stereo monitor index & source=1 is your mic input via "pacmd list-sources"
 
   ## This sink mirrors monitored speaker output
 
