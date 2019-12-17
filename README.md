@@ -4,6 +4,8 @@ I have done it at last. "pacmd list-sources" shows that my stereo monitor's inde
 
 Adding this to the end of /etc/pulse/default.pa FINALLY permitted me to AT LAST record mic input and computer output.
 
+I highly reccomend using the program audio-recorder for this. It's the most capable of its kin for this task.
+
 ## Add this to the end of /etc/pulse/default.pa or ~/.pulse/default.pa
 
 ## Ensure that the value of source=0 is your stereo monitor index & source=1 your mic input
