@@ -4,7 +4,9 @@
 
   Adding these 6 lines to the end of /etc/pulse/default.pa FINALLY permits me to record mic input and computer output.
 
-  The programs I use are pavucontrol and audio-recorder {source of "User defined audio source" set to OutSink and MicSink}.
+  The programs I use are pavucontrol and audio-recorder. 
+  
+  Set audio-recorder's source to "User defined audio source" and set that to OutSink and MicSink.
 
   ###### Add this to the end of /etc/pulse/default.pa or ~/.pulse/default.pa
 
