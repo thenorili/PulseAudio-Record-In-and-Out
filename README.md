@@ -1,14 +1,14 @@
 ## PulseAudio-Record-Output-and-Input
 
-I have conquered pulseaudio. With this I can record input and output in one stream while both are in use e.g. by discord.
+  I have conquered pulseaudio. With this I can record input and output in one stream while both are in use e.g. by discord.
 
-Adding this to the end of /etc/pulse/default.pa FINALLY permitted me to AT LAST record mic input and computer output.
+  Adding these 6 lines to the end of /etc/pulse/default.pa FINALLY permits me to record mic input and computer output.
 
-The programs I use are pavucontrol and audio-recorder {source of "User defined audio source" set to OutSink and MicSink}.
+  The programs I use are pavucontrol and audio-recorder {source of "User defined audio source" set to OutSink and MicSink}.
 
-##### Add this to the end of /etc/pulse/default.pa or ~/.pulse/default.pa
+  ###### Add this to the end of /etc/pulse/default.pa or ~/.pulse/default.pa
 
-##### Ensure that the value of source=0 is your stereo monitor index & source=1 is your mic input via "pacmd list-sources"
+  ###### Ensure that the value of source=0 is your stereo monitor index & source=1 is your mic input via "pacmd list-sources"
 
   ### This sink mirrors monitored speaker output
 
