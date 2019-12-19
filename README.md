@@ -12,7 +12,11 @@
 
   ###### Ensure that the value of source=0 is your stereo monitor index & source=1 is your mic input via "pacmd list-sources"
 
-  ### This sink mirrors monitored speaker output
+
+
+
+
+  #### This sink mirrors monitored speaker output
 
 load-module module-null-sink sink_name=OutSink
 
@@ -20,7 +24,8 @@ update-sink-proplist OutSink device.description=OutSink
 
 load-module module-loopback source=0 sink=OutSink
 
-  ### This sink mirrors mic input
+
+  #### This sink mirrors mic input
 
 load-module module-null-sink sink_name=MicSink
 
